@@ -32,8 +32,10 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     // MARK: - Timeline Population
     
     func getCurrentTimelineEntry(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimelineEntry?) -> Void) {
-        // Call the handler with the current timeline entry
-        handler(nil)
+        let template = getTemplate(complication: complication)
+        
+        let timelineEntry = CLKComplicationTimelineEntry(date: Date(), complicationTemplate: template!)
+        handler(timelineEntry)
     }
     
     func getTimelineEntries(for complication: CLKComplication, before date: Date, limit: Int, withHandler handler: @escaping ([CLKComplicationTimelineEntry]?) -> Void) {
@@ -51,6 +53,59 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     func getLocalizableSampleTemplate(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTemplate?) -> Void) {
         // This method will be called once per supported complication, and the results will be cached
         handler(nil)
+    }
+
+    func getTemplate(complication: CLKComplication?) -> CLKComplicationTemplate? {
+        // This method will be called once per supported complication, and
+        // the results will be cached
+        
+        var template: CLKComplicationTemplate?
+        switch complication!.family {
+        case .modularSmall:
+            let modularSmallTemplate =
+                CLKComplicationTemplateModularSmallRingText()
+            modularSmallTemplate.textProvider =
+                CLKSimpleTextProvider(text: "F")
+            modularSmallTemplate.fillFraction = 100
+            modularSmallTemplate.ringStyle = CLKComplicationRingStyle.closed
+            template = modularSmallTemplate
+        case .utilitarianSmall:
+            template = nil
+        case .utilitarianLarge:
+            template = nil
+        case .circularSmall:
+            template = nil
+        case .utilitarianSmallFlat:
+            template = nil
+        case .extraLarge:
+            template = nil
+        case .graphicCorner:
+            if #available(watchOSApplicationExtension 5.0, *) {
+                let graphicCornerTemplate = CLKComplicationTemplateGraphicCornerStackText()
+                graphicCornerTemplate.outerTextProvider = CLKSimpleTextProvider(text: "Get")
+                graphicCornerTemplate.innerTextProvider = CLKSimpleTextProvider(text: "Money")
+                template = graphicCornerTemplate
+            } else {
+                template = nil
+            }
+        case .graphicBezel:
+            template = nil
+        case .graphicCircular:
+            template = nil
+        case .graphicRectangular:
+            template = nil
+        case .modularLarge:
+            template = nil
+        }
+        return template
+        
+    }
+    
+    func getPlaceholderTemplateForComplication(
+        complication: CLKComplication,
+        withHandler handler: (CLKComplicationTemplate?) -> Void) {
+        
+        handler(getTemplate(complication: complication))
     }
     
 }
