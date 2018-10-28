@@ -1,0 +1,630 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9679D4492185859000F9AAFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9679D4482185859000F9AAFF /* AppDelegate.swift */; };
+		9679D44B2185859000F9AAFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9679D44A2185859000F9AAFF /* ViewController.swift */; };
+		9679D44E2185859000F9AAFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9679D44C2185859000F9AAFF /* Main.storyboard */; };
+		9679D4502185859100F9AAFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9679D44F2185859100F9AAFF /* Assets.xcassets */; };
+		9679D4532185859100F9AAFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9679D4512185859100F9AAFF /* LaunchScreen.storyboard */; };
+		9679D4582185859100F9AAFF /* Fire TV Remote WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 9679D4572185859100F9AAFF /* Fire TV Remote WatchKit App.app */; };
+		9679D45E2185859100F9AAFF /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9679D45C2185859100F9AAFF /* Interface.storyboard */; };
+		9679D4602185859200F9AAFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9679D45F2185859200F9AAFF /* Assets.xcassets */; };
+		9679D4672185859200F9AAFF /* Fire TV Remote WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9679D4662185859200F9AAFF /* Fire TV Remote WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9679D46C2185859200F9AAFF /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9679D46B2185859200F9AAFF /* InterfaceController.swift */; };
+		9679D46E2185859200F9AAFF /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9679D46D2185859200F9AAFF /* ExtensionDelegate.swift */; };
+		9679D4702185859200F9AAFF /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9679D46F2185859200F9AAFF /* NotificationController.swift */; };
+		9679D4722185859200F9AAFF /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9679D4712185859200F9AAFF /* ComplicationController.swift */; };
+		9679D4742185859300F9AAFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9679D4732185859300F9AAFF /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9679D4592185859100F9AAFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9679D43D2185859000F9AAFF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9679D4562185859100F9AAFF;
+			remoteInfo = "Fire TV Remote WatchKit App";
+		};
+		9679D4682185859200F9AAFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9679D43D2185859000F9AAFF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9679D4652185859200F9AAFF;
+			remoteInfo = "Fire TV Remote WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9679D47C2185859300F9AAFF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9679D4672185859200F9AAFF /* Fire TV Remote WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9679D4802185859300F9AAFF /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				9679D4582185859100F9AAFF /* Fire TV Remote WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9679D4452185859000F9AAFF /* Fire TV Remote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fire TV Remote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9679D4482185859000F9AAFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9679D44A2185859000F9AAFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9679D44D2185859000F9AAFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9679D44F2185859100F9AAFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9679D4522185859100F9AAFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9679D4542185859100F9AAFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9679D4572185859100F9AAFF /* Fire TV Remote WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fire TV Remote WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9679D45D2185859100F9AAFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		9679D45F2185859200F9AAFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9679D4612185859200F9AAFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9679D4662185859200F9AAFF /* Fire TV Remote WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Fire TV Remote WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9679D46B2185859200F9AAFF /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		9679D46D2185859200F9AAFF /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		9679D46F2185859200F9AAFF /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		9679D4712185859200F9AAFF /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		9679D4732185859300F9AAFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9679D4752185859300F9AAFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9679D4762185859300F9AAFF /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9679D4422185859000F9AAFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9679D4632185859200F9AAFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9679D43C2185859000F9AAFF = {
+			isa = PBXGroup;
+			children = (
+				9679D4472185859000F9AAFF /* Fire TV Remote */,
+				9679D45B2185859100F9AAFF /* Fire TV Remote WatchKit App */,
+				9679D46A2185859200F9AAFF /* Fire TV Remote WatchKit Extension */,
+				9679D4462185859000F9AAFF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9679D4462185859000F9AAFF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9679D4452185859000F9AAFF /* Fire TV Remote.app */,
+				9679D4572185859100F9AAFF /* Fire TV Remote WatchKit App.app */,
+				9679D4662185859200F9AAFF /* Fire TV Remote WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9679D4472185859000F9AAFF /* Fire TV Remote */ = {
+			isa = PBXGroup;
+			children = (
+				9679D4482185859000F9AAFF /* AppDelegate.swift */,
+				9679D44A2185859000F9AAFF /* ViewController.swift */,
+				9679D44C2185859000F9AAFF /* Main.storyboard */,
+				9679D44F2185859100F9AAFF /* Assets.xcassets */,
+				9679D4512185859100F9AAFF /* LaunchScreen.storyboard */,
+				9679D4542185859100F9AAFF /* Info.plist */,
+			);
+			path = "Fire TV Remote";
+			sourceTree = "<group>";
+		};
+		9679D45B2185859100F9AAFF /* Fire TV Remote WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				9679D45C2185859100F9AAFF /* Interface.storyboard */,
+				9679D45F2185859200F9AAFF /* Assets.xcassets */,
+				9679D4612185859200F9AAFF /* Info.plist */,
+			);
+			path = "Fire TV Remote WatchKit App";
+			sourceTree = "<group>";
+		};
+		9679D46A2185859200F9AAFF /* Fire TV Remote WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9679D46B2185859200F9AAFF /* InterfaceController.swift */,
+				9679D46D2185859200F9AAFF /* ExtensionDelegate.swift */,
+				9679D46F2185859200F9AAFF /* NotificationController.swift */,
+				9679D4712185859200F9AAFF /* ComplicationController.swift */,
+				9679D4732185859300F9AAFF /* Assets.xcassets */,
+				9679D4752185859300F9AAFF /* Info.plist */,
+				9679D4762185859300F9AAFF /* PushNotificationPayload.apns */,
+			);
+			path = "Fire TV Remote WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9679D4442185859000F9AAFF /* Fire TV Remote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9679D4812185859300F9AAFF /* Build configuration list for PBXNativeTarget "Fire TV Remote" */;
+			buildPhases = (
+				9679D4412185859000F9AAFF /* Sources */,
+				9679D4422185859000F9AAFF /* Frameworks */,
+				9679D4432185859000F9AAFF /* Resources */,
+				9679D4802185859300F9AAFF /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9679D45A2185859100F9AAFF /* PBXTargetDependency */,
+			);
+			name = "Fire TV Remote";
+			productName = "Fire TV Remote";
+			productReference = 9679D4452185859000F9AAFF /* Fire TV Remote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9679D4562185859100F9AAFF /* Fire TV Remote WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9679D47D2185859300F9AAFF /* Build configuration list for PBXNativeTarget "Fire TV Remote WatchKit App" */;
+			buildPhases = (
+				9679D4552185859100F9AAFF /* Resources */,
+				9679D47C2185859300F9AAFF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9679D4692185859200F9AAFF /* PBXTargetDependency */,
+			);
+			name = "Fire TV Remote WatchKit App";
+			productName = "Fire TV Remote WatchKit App";
+			productReference = 9679D4572185859100F9AAFF /* Fire TV Remote WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		9679D4652185859200F9AAFF /* Fire TV Remote WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9679D4792185859300F9AAFF /* Build configuration list for PBXNativeTarget "Fire TV Remote WatchKit Extension" */;
+			buildPhases = (
+				9679D4622185859200F9AAFF /* Sources */,
+				9679D4632185859200F9AAFF /* Frameworks */,
+				9679D4642185859200F9AAFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fire TV Remote WatchKit Extension";
+			productName = "Fire TV Remote WatchKit Extension";
+			productReference = 9679D4662185859200F9AAFF /* Fire TV Remote WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9679D43D2185859000F9AAFF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Jason Stallings";
+				TargetAttributes = {
+					9679D4442185859000F9AAFF = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					9679D4562185859100F9AAFF = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					9679D4652185859200F9AAFF = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = 9679D4402185859000F9AAFF /* Build configuration list for PBXProject "Fire TV Remote" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9679D43C2185859000F9AAFF;
+			productRefGroup = 9679D4462185859000F9AAFF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9679D4442185859000F9AAFF /* Fire TV Remote */,
+				9679D4562185859100F9AAFF /* Fire TV Remote WatchKit App */,
+				9679D4652185859200F9AAFF /* Fire TV Remote WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9679D4432185859000F9AAFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9679D4532185859100F9AAFF /* LaunchScreen.storyboard in Resources */,
+				9679D4502185859100F9AAFF /* Assets.xcassets in Resources */,
+				9679D44E2185859000F9AAFF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9679D4552185859100F9AAFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9679D4602185859200F9AAFF /* Assets.xcassets in Resources */,
+				9679D45E2185859100F9AAFF /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9679D4642185859200F9AAFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9679D4742185859300F9AAFF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9679D4412185859000F9AAFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9679D44B2185859000F9AAFF /* ViewController.swift in Sources */,
+				9679D4492185859000F9AAFF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9679D4622185859200F9AAFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9679D4702185859200F9AAFF /* NotificationController.swift in Sources */,
+				9679D4722185859200F9AAFF /* ComplicationController.swift in Sources */,
+				9679D46E2185859200F9AAFF /* ExtensionDelegate.swift in Sources */,
+				9679D46C2185859200F9AAFF /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9679D45A2185859100F9AAFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9679D4562185859100F9AAFF /* Fire TV Remote WatchKit App */;
+			targetProxy = 9679D4592185859100F9AAFF /* PBXContainerItemProxy */;
+		};
+		9679D4692185859200F9AAFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9679D4652185859200F9AAFF /* Fire TV Remote WatchKit Extension */;
+			targetProxy = 9679D4682185859200F9AAFF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9679D44C2185859000F9AAFF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9679D44D2185859000F9AAFF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9679D4512185859100F9AAFF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9679D4522185859100F9AAFF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9679D45C2185859100F9AAFF /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9679D45D2185859100F9AAFF /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9679D4772185859300F9AAFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9679D4782185859300F9AAFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9679D47A2185859300F9AAFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75EGRT7282;
+				INFOPLIST_FILE = "Fire TV Remote WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.octalmage.Fire-TV-Remote.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		9679D47B2185859300F9AAFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75EGRT7282;
+				INFOPLIST_FILE = "Fire TV Remote WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.octalmage.Fire-TV-Remote.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		9679D47E2185859300F9AAFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75EGRT7282;
+				IBSC_MODULE = Fire_TV_Remote_WatchKit_Extension;
+				INFOPLIST_FILE = "Fire TV Remote WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.octalmage.Fire-TV-Remote.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		9679D47F2185859300F9AAFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75EGRT7282;
+				IBSC_MODULE = Fire_TV_Remote_WatchKit_Extension;
+				INFOPLIST_FILE = "Fire TV Remote WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.octalmage.Fire-TV-Remote.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		9679D4822185859300F9AAFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75EGRT7282;
+				INFOPLIST_FILE = "Fire TV Remote/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.octalmage.Fire-TV-Remote";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9679D4832185859300F9AAFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75EGRT7282;
+				INFOPLIST_FILE = "Fire TV Remote/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.octalmage.Fire-TV-Remote";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9679D4402185859000F9AAFF /* Build configuration list for PBXProject "Fire TV Remote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9679D4772185859300F9AAFF /* Debug */,
+				9679D4782185859300F9AAFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9679D4792185859300F9AAFF /* Build configuration list for PBXNativeTarget "Fire TV Remote WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9679D47A2185859300F9AAFF /* Debug */,
+				9679D47B2185859300F9AAFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9679D47D2185859300F9AAFF /* Build configuration list for PBXNativeTarget "Fire TV Remote WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9679D47E2185859300F9AAFF /* Debug */,
+				9679D47F2185859300F9AAFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9679D4812185859300F9AAFF /* Build configuration list for PBXNativeTarget "Fire TV Remote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9679D4822185859300F9AAFF /* Debug */,
+				9679D4832185859300F9AAFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9679D43D2185859000F9AAFF /* Project object */;
+}
